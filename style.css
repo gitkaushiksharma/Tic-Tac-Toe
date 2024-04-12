@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 24px; /* Keep font size consistent */
+}
+
+#box{
+    height: 31.33333%;
+    width: 31.333333%;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+}
+
+.container{
+    height: 60vh;
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
+}
+
+#button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.bt{
+    font-size: x-large;
+    border: 5px solid white;
+    cursor: pointer;
+    padding: 5px;
+    background-color: pink;
+    color: black;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+p{
+    color: white;
+    font-size: 35px;
+}
+
+.hide{
+    display: none;
+}
+
+/* Media Query for smartphones */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+    #box {
+        height: 20%;
+        width: 20%; /* Adjust width for smaller screens */
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+    .container {
+        width: 80vw; /* Adjust width for smaller screens */
+    }
+    .bt {
+        font-size: large; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+    p {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+}
