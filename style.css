@@ -85,7 +85,7 @@ p{
     }
     #box {
         height: 20%;
-        width: 20%; /* Adjust width for smaller screens */
+        width: 30%; /* Adjust width for smaller screens */
         font-size: 36px; /* Adjust font size for smaller screens */
     }
     .container {
